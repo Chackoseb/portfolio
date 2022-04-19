@@ -1,751 +1,760 @@
-<!DOCTYPE html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-	<title>Porfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Chackochan</title>
 
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+  </head>
+  <body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light stroke">
+      <a class="navbar-brand" href="index.html">
+        <span> Chackochan</span>
+      </a>
+      <!-- if logo is image enable this   
+        <a class="navbar-brand" href="#index.html">
+            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+        </a> -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa icon-expand fa-bars"></span>
+        <span class="fa icon-close fa-times"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item @@portfolio__active">
+            <!-- <a class="nav-link" href="portfolio.html">My Portfolio</a> -->
+          </li>
+          <li class="nav-item @@c__active">
+            <a class="nav-link" href="#contact">Contact me</a>
+          </li>
+        </ul>
+      </div>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="popup ml-auto">
+          <a href="#menu" class="domain" data-toggle="modal" data-target="#DomainModal">
+            <div class="hamburger">
+              <span class="top-bar"></span>
+              <span class="middle-bar"></span>
+              <span class="bottom-bar"></span>
+            </div>
+          </a>
+        </div>
+      </div>
 
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+      <!-- toggle switch for light and dark theme -->
+      <div class="mobile-position ml-lg-2">
+        <nav class="navigation">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox">
+              <div class="mode-container">
+                <i class="gg-sun"></i>
+                <i class="gg-moon"></i>
+              </div>
+            </label>
+          </div>
+        </nav>
+      </div>
+      <!-- //toggle switch for light and dark theme -->
+    </nav>
+  </div>
+</header>
+<!--/header-->
+<div class="header-gap">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	
-</head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>C</span>hackochan Sebastian</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-					<li class="nav-item"><a href="#Skills-section" class="nav-link"><span>Skills</span></a></li>
-					
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section class="hero-wrap js-fullheight">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-					<div class="text text-center">
-						<span class="subheading">Hey! I am</span>
-						<h1>Chackochan</h1>
-						<h2>I'm a
-							<span class="txt-rotate" data-period="500"
-								data-rotate='[  "Web Developer", "Android Developer", "Graphic Designer"]'></span>
-						</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		<div class="mouse">
-			<a href="#" class="mouse-icon">
-				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-			</a>
-		</div>
-	</section>
-
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>CSE Sophomore at SCMS School of Engineering & Technology <br>Kerala, India . </p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>Chackochan Sebastian </span></li>
-								<li class="d-flex"><span>Email:</span> <span>chackochansebastian1@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+91 9605361913</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="5">0</span>
-								<span>Project complete</span>
-							</p>
-					
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container-fluid px-md-5">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="365">0</strong>
-							<span>Number of days coded</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="5">0</strong>
-							<span>Complete Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="10">0</strong>
-							<span>Happy Customers</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="150">0</strong>
-							<span>Cups of coffee</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+</div>
 
 
-	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-1">Education</a></li>
-							<li><a href="#page-2">Experience</a></li>
-							<li><a href="#page-3">Skills</a></li>
-							<li><a href="#page-4">Projects</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-9" id="education-section">
-					<div id="page-1" class="page one">
-						<h2 class="heading">Education</h2>
-					
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2017-2019</span>
-								<h2>Senior Secondary</h2>
-								<span class="position">Little Flower Public School Muringoor, Kerala</span>
-								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p> -->
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2020-2024</span>
-								<h2>B-Tech in Computer Science</h2>
-								<span class="position">SCMS School of Engineering and Technology karukutty, kerala</span>
-								<!-- <p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p> -->
-							</div>
-						</div>
-					</div>
+<!-- Domain Modal -->
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
 
-					<div id="page-2" class="page two">
-						<h2 class="heading">Work Experience</h2>
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2019.09-2021.04(1년 8개월)</span>
-								<h2>Full Stack Developer</h2>
-								<span class="position">주식회사 더라피스</span>
-								<p>동남아 스파 예약 서비스 Web 개발, 온라인 요가 수업 예약/결제 서비스 개발<br /></p>
-								<b class="text-primary">기술 스택</b>
-								<p>ReactJS, Next.js,Typescript, Styled-components, AWS S3 static hosting</p>
-								<b class="text-primary">주요 업무 </b>
-								<div>
-									<div> - React + typescript 기반 웹 서비스 개발/운영</div>
-									<div> - 디자인 시스템 도입을 위한 UI 컴포넌트 관리용 storybook 도입</div>
-									<div> - SEO를 위한 Next.js 도입</div>
-									<div> - Serverless 환경을 위한 s3 기반의 static hosting 구축</div>
-								</div>
-								</p>
-							</div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
 
-						</div> -->
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2021-2022</span>
-								<h2>Web Designer</h2>
-								<span class="position">Freelance</span>
-								<ul>
-									<li>Checking for errors and de-bugging websites .</li>
-									<li>Making websites responsive .</li>
-									<li>Client interaction about the project.</li>
-								</ul>
-								
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2021-2022</span>
-								<h2>Web Developer</h2>
-								<span class="position">Freelancer</span>
-								<ul>
-									<li>Designing Personalized websites for freshers .</li>
-									<li>Modifying and making changes according to clients Requirements .</li>
-									<li>Creating clutter free and simple UI . </li>
-								</ul>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2020-2022</span>
-								<h2>Art &amp; Creative Director</h2>
-								<span class="position">Side Tech</span>
-								<ul>
-									<li>Public Speaking </li>
-									<li>Dance choreography </li>
-									<li>Video editing </li>
-									<li>Graphic Designing </li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<section id="Skills-section"> 
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
-						<div class="row progress-circle mb-5">
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
+      <div class="modal-body">
+        <div class="modal__content">
+          <a class="navbar-brand"> <span>Chackochan
+          </span></a>
+          <!-- if logo is image enable this   
+            <h2 class="logo">
+              <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+            </h2> -->
+          <p class="mt-md-3 mt-2">I Would Love to Collaborate!
+          </p>
 
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
+          <img src="assets/images/banner.png" alt="" class="img-fluid mt-5">
 
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='80'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Java Script</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='75'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>React</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Bootstrap</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-											aria-valuemin="0" aria-valuemax="100" style="width:95%">
-											<span>95%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Node js</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Mongo DB</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>
-					<!-- <div id="page-4" class="page four">
-						<h2 id="projects-section" class="heading">Projects</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2019.09-2020.08</span>
-								<div class="d-flex">
-									<h2>웰리스 여행 상품 예약 플랫폼 개발</h2>
-									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
-											class="btn btn-outline-secondary"
-											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="/images/project_1_screenshot.png">스크린샷</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="https://www.wellytravel.com/">Link</a>
-									</div>
-								</div>
-								<span class="position">주식회사 더라피스</span>
-								<div> <b class="text-dark">기술 스택 : </b>React, Typescript, Next.js, Styled-Component,
-									MobX
-								</div>
-								<div> <b class="text-dark">주요 기능 : </b> 회원 관리 및 SNS 로그인, 상품 리스트 확인, 상품 상세 정보
-									확인, 예약 관리, 결제 </div>
-								<p> React </p>
-							</div>
-						</div> -->
-					
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- 
-	<section class="ftco-section ftco-project">
-		<div class="container-fluid px-md-0">
-			<div class="row no-gutters justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 id="side-projects-section" class="mb-4">Side Projects</h2>
-					<p>꾸준히 사이드 프로젝트를 진행하며, 다양한 분야의 기술 스택을 경험해왔습니다.</p>
-				</div>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-project-1.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://qpi.kr/"> QPI - 소개팅 서비스 소개 페이지 개발</a></h3>
-							<span>UI/UX 디자인부터 웹 호스팅까지 전체 영역을 담당하였습니다.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- <section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">My Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Explore More</h2>
-					<p>Connect with me on Instagram.</p>
-					<p class="mb-0"><a href="https://www.instagram.com/_chacko_seb_" class="btn btn-primary py-3 px-5">Instagram</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-					<!-- <p>회사와 함께 성장하는 개발자가 되겠습니다. 연락주세요.</p> -->
-				</div>
-			</div>
-
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Github</h3>
-							<p><a href="https://www.github.com/Chackoseb">Chackoseb</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel://">+91 9605361913</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Email Address</h3>
-							<p><a class="size" href="mailto:chackochansebastian1@gmail.com">chackochansebastian1@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Linked In</h3>
-							<p><a href="https://www.linkedin.com/in/chackochansebastian">chackochansebastian</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
+          <div class="widget-social-icons mt-sm-5 mt-4">
+            <ul class="icon-rounded address">
+              <li class="mt-3">
+                <p><a href="tel:+404-11-22-89">+91 9605361913</a></p>
+              </li>
+              <li class="mt-2">
+                <p><a href="mailto:design@portfolio.com">chackochansebastian1@gmail.com</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="widget-social-icons mt-sm-5 mt-4">
+            <ul class="follow-social">
+              <li><a href="https://github.com/Chackoseb"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/chackochansebastian"><span class="fa fa-linkedin"></span></a></li>
+              <li><a href="https://www.instagram.com/_chacko_seb_/"><span class="fa fa-instagram"></span></a></li>
+              <li><a href="https://www.twitter.com/ChackochanSeba1"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+          </div>
 
 
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
+        </div>
+      </div>
+    </div>
+    <!-- //modal-content -->
+  </div>
+  <!-- //modal-dialog -->
+</div>
+<!-- //Domain modal -->
+<!-- banner section -->
+<section id="home" class="w3l-banner pb-5">
+    <div class="container pb-md-3">
+        <div class="banner-wrapper text-center">
+            <div class="">
+                <span class="text">About Me</span>
+                <h1 class="mb-4 title">Hello, <span class="type-js"><span class="text-js">I’m Chackochan Sebastian</span></span><br>
+                    I’m working as Web Developer.</h1>
+                <p class="mx-lg-5">I love <strong>Graphic design</strong> and <strong>Photography</strong> and have been working on my portfolio since 2020.<br> Sophomore at SCMS School of Engineering & Technology
+                  Kerala, India.
+                    
+                </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 mx-lg-auto col-md-10">
+                <img src="assets/images/banner.png" alt="" class="img-fluid mt-lg-5 mt-3">
+              </div>
+            </div>
+            <ul class="follow-social">
+                <li><p>Follow me </p></li>
+                <li><a href="https://github.com/Chackoseb"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/chackochansebastian"><span class="fa fa-linkedin"></span></a></li>
+              <li><a href="https://www.instagram.com/_chacko_seb_/"><span class="fa fa-instagram"></span></a></li>
+              <li><a href="https://www.twitter.com/ChackochanSeba1"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+<!-- home page about section -->
+<section class="w3l-homeblock1" id="about">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="text">Education</span>
+                    <h3 class="title-big"><span>Educational</span> History</h3>
+                    <!-- <p class="mt-4">Education is both the act of teaching knowledge to others and the act of receiving knowledge from someone else. Education also refers to the knowledge received through schooling or instruction and to the institution of teaching as a whole. </p> -->
+                    <ul class="service-list mt-md-5 mt-4">
+                        <li class="service-link"><a href="#"><strong>B.Tech in Computer Science </strong>  <br>
+                           <span class="small">SCMS School of Engineering and Technology Karukutty, Kerala 
+                            <br>
+                           SGPA: <strong>10</strong> </span><br>
+                          <span>2020-2024</span></a></li>
+                          <br>
+                           <li class="service-link"><a href="#"><strong>Senior Secondary </strong>  <br>
+                            <span class="small">Little Flower Public School Muringoor, Kerala <br>
+                              CGPA: <strong>8.5</strong></span><br>
+                            <span>2017-2019</span></a></li>
+                            <br>
+                            <li class="service-link"><a href="#"><strong>Higher Secondary</strong>  <br>
+                              <span class="small">Little Flower Public School Muringoor, Kerala <br>
+                                CGPA: <strong>10</strong></span><br>
+                              <span>2016-2017</span></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="position-relative mid">
+                        <img src="assets/images/about.jpg" alt="" height="100px" width="auto" class="radius-image img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
 
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>
-						
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved |  <a
-							 target="_blank">Chackochan Sebastian</a>
-						
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+<!-- home page about section -->
+<section class="w3l-homeblock2" id="skills">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6 align-self">
+                    <div class="position-relative px-lg-5 mx-lg-0 mx-md-5 image-padding">
+                        <img src="assets/images/skills.png" alt="" class="radius-image img-fluid">
+                        <div class="position-absolute-images">
+                            <img src="assets/images/file.png" class="img-fluid pos-img" alt="" />
+                            <img src="assets/images/file1.png" class="img-fluid pos-img1" alt="" />
+                            <img src="assets/images/file2.png" class="img-fluid pos-img2" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+                    <span class="text">My Featured Skills</span>
+                    <h3 class="title-big">I’m using <span>top leading</span>
+                        design methods.</h3>
+                    <p class="mt-4">I Specialize in Graphic designing, and am passionate about creating Awesome
+                        Portfolio work. And I always ready to impress the audience with my Creativity. </p>
+                    <div class="skills-bars mt-5">
+                        <div class="progress-info">
+                            <h6 class="progress-tittle">UI/UX Design</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width:50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <h6 class="progress-tittle">Web Development
+                            </h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <h6 class="progress-tittle">Web Designing</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-info mb-0">
+                            <h6 class="progress-tittle">Android Development</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
+
+<!-- home page about section -->
+<section class="w3l-homeblock3" id="awards">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="text">Volunteering</span>
+                    <h3 class="title-big">Technical and social
+                         <span> contributions.</span></h3>
+                    <p class="mt-4">“The best way to find yourself is to lose yourself in the service of others.” –  <strong>Gandhi</strong> </p>
+                    <div class="reward-list mt-5">
+                        <div class="reward-item">
+                            <div class="reward-item-photo"><img src="assets/images/banner.png" alt="" class="img-fluid"></div>
+                            <div class="reward-item-detail">
+                                <span class="reward-item-title"><strong>Campus Ambassador</strong> </span>
+                                <p class="reward-item-descr"><i><strong>Droid 2021</strong> Annual Robotics fest </i> <br>
+                                  <strong>IEEE FISAT</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-item-photo"><img src="assets/images/skills.png" alt="" class="img-fluid"></div>
+                            <div class="reward-item-detail">
+                                <span class="reward-item-title">NSS VOLUNTEER</span>
+                                <p class="reward-item-descr"><i><strong>National</strong>  Service Scheme</i><br>
+                               <strong>APJAKTU</strong> </p>
+                            </div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-item-photo"><img src="assets/images/banner.png" alt="" class="img-fluid"></div>
+                            <div class="reward-item-detail">
+                                <span class="reward-item-title">IEEE VOLUNTEER</span>
+                                <p class="reward-item-descr"><i><strong>Student</strong>Volunteer</i><br>
+                                <strong>IEEE SB SSET</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self mt-lg-0 mt-md-5 mt-4">
+                    <div class="position-relative mid px-lg-5 mx-lg-0 mx-md-5 image-padding">
+                        <img src="assets/images/awards.png" alt="" class="radius-image img-fluid-1">
+                          <!-- <div class="position-absolute-images">
+                              <img src="assets/images/award.png" class="img-fluid pos-img" alt="" />
+                              <img src="assets/images/award1.png" class="img-fluid pos-img1" alt="" />
+                              <img src="assets/images/award2.png" class="img-fluid pos-img2" alt="" />
+                          </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
+
+<!-- home page about section -->
+<!-- <section class="w3l-clients" id="skills">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6 align-self">
+                    <div class="position-relative px-lg-5">
+                        <img src="assets/images/clients.png" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <span class="text">Testimonials</span>
+                    <h3 class="title-big">What my <span>clients think</span> about Me</h3>
+                    <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-4">
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success .</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="assets/images/team1.jpg" class="img-fluid"
+                                                alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>John wilson</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid"
+                                                alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>Julia sakura</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="assets/images/team3.jpg" class="img-fluid"
+                                                alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>Roy Linderson</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="assets/images/team4.jpg" class="img-fluid"
+                                                alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>Mike Thyson</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid"
+                                                alt="client-img">
+                                        </div>
+                                        <div class="peopl align-self">
+                                            <h3>Laura gill</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- //home page about section -->
+
+<!-- home page about section -->
+<!-- <section class="w3l-homeblock3" id="clients">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="text">My Clients and Partners </span>
+                    <h3 class="title-big">Clients / Partners and
+                        <span> Collaborations.</span></h3>
+                    <p class="mt-4">Over the past ten years, I've been fortunate to work with and for people from some
+                        amazing organizations.</p>
+                    <div class="reward-list mt-5">
+                        <div class="reward-item">
+                            <div class="reward-item-photo">1k+
+                            </div>
+                            <div class="reward-item-detail">
+                                <span class="reward-item-title">Total CLients</span>
+                                <p class="reward-item-descr">over 18 countries</p>
+                            </div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-item-photo">95%
+                            </div>
+                            <div class="reward-item-detail">
+                                <span class="reward-item-title">Sensitive feedback</span>
+                                <p class="reward-item-descr">For Design quality</p>
+                            </div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-item-photo">150+
+                            </div>
+                            <div class="reward-item-detail">
+                                <span class="reward-item-title">Trusted sponsers</span>
+                                <p class="reward-item-descr">Featued by top rankers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self text-center mt-lg-0 mt-md-5 mt-4">
+                    <div class="images">
+                        <img src="assets/images/client1.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client2.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client3.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client4.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client5.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client6.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client2.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client3.png" class="img-fluid" alt="" />
+                        <img src="assets/images/client4.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- //home page about section -->
+
+<!-- home page contact section -->
+<section class="w3l-contactblock" id="contact">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-4 py-md-3">
+            <div class="contact-heading text-center">
+                <span class="text">Get in touch with Me </span>
+                <h3 class="title-big">Contact Me</h3>
+
+            </div>
+            <div class="row mt-md-5 mt-4 pt-lg-3">
+                <div class="col-lg-5">
+                    <p>I’m open to any communication! Feel free to contact me any convenient way!
+                        I’m always interested in hearing about new projects and opportunities.
+                    </p>
+                    <ul class="address mt-md-5 mt-4">
+                        <li class="mb-3">
+                            <p><span class="fa fa-phone"></span> <a href="tel:+404-11-22-89">+91 9605361913</a></p>
+                        </li>
+                        <li class="mb-4">
+                            <p><span class="fa fa-envelope-open"></span> <a href="mailto:chackochansebastian1@gmail.com">chackochansebastian1@gmail.com</a></p>
+                        </li>
+                        <li class="">
+                            <p><span class="fa fa-map-marker"></span> Chalakudy, <br>Thrissur Kerala, India.</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-7 mt-lg-0 mt-md-5 mt-4">
+                    <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name"
+                                required="">
+                            <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
+                                required="">
+                        </div>
+                        <div class="twice">
+                            <input type="text" class="form-control" name="w3lSubject" id="w3lSubject"
+                                placeholder="Subject" required="">
+                        </div>
+                        <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
+                            required=""></textarea>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-secondary btn-style mt-4">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page contact section -->
+<div class="copyright py-sm-5 py-4 text-center">
+  <div class="container">
+    <p class="copy-footer-29">© 2022 Chackochan. All rights reserved</p>
+  </div>
+</div>
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+
+<!-- jQuery and Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
 
 
+<!-- owlcarousel -->
+<script src="assets/js/owl.carousel.js"></script>
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+<!-- script for tesimonials carousel slider -->
+<script>
+  $(document).ready(function () {
+    $("#owl-demo1").owlCarousel({
+      loop: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        736: {
+          items: 1,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for tesimonials carousel slider -->
+
+<!-- script for portfolio slider -->
+<script>
+  $(document).ready(function () {
+    $("#owl-portfolio").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        568: {
+          items: 2,
+          nav: false
+        },
+        1080: {
+          items: 3,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for portfolio slider -->
+
+<!-- script for featured posts blog slider -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for featured posts blog slider -->
+
+<!-- script for banner typing text -->
+<script>
+  function autoType(elementClass, typingSpeed) {
+    var thhis = $(elementClass);
+    thhis.css({
+      "position": "relative",
+      "display": "inline-block"
+    });
+    thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+    thhis = thhis.find(".text-js");
+    var text = thhis.text().trim().split('');
+    var amntOfChars = text.length;
+    var newString = "";
+    thhis.text("|");
+    setTimeout(function () {
+      thhis.css("opacity", 1);
+      thhis.prev().removeAttr("style");
+      thhis.text("");
+      for (var i = 0; i < amntOfChars; i++) {
+        (function (i, char) {
+          setTimeout(function () {
+            newString += char;
+            thhis.text(newString);
+          }, i * typingSpeed);
+        })(i + 1, text[i]);
+      }
+    }, 1500);
+  }
+
+  $(document).ready(function () {
+    // Now to start autoTyping just call the autoType function with the 
+    // class of outer div
+    // The second paramter is the speed between each letter is typed.   
+    autoType(".type-js", 200);
+  });
+</script>
+<!-- //script for banner typing text -->
 
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
 
-	<script src="js/main.js"></script>
+<!-- MENU-JS -->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!-- //MENU-JS -->
+
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 
