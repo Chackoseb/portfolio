@@ -425,7 +425,7 @@ mark,
   height: auto; }
   
   .img-fluid-1 {
-    max-width: 150%;
+    max-width: 100%;
     height: auto; }
 
 .img-thumbnail {
