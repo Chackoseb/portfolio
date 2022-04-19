@@ -10742,7 +10742,7 @@ span.text {
   margin: auto; }
 
 .w3l-contactblock ul.address a {
-  font-size: 26px;
+  font-size: 25px;
   color: var(--heading-color);
   font-weight: 500; }
 
@@ -10803,7 +10803,7 @@ span.text {
 
 @media (max-width: 384px) {
   .w3l-contactblock ul.address a {
-    font-size: 20px; }
+    font-size: 18px; }
   .w3l-contactblock ul.address li p span.fa {
     font-size: 18px; } }
 
@@ -11162,7 +11162,4 @@ button.owl-next {
     position: absolute;
     bottom: 38%; } }
 
-.email-size {
-  font-size: 25px;
-}
 /*# sourceMappingURL=style-starter.css.map */
